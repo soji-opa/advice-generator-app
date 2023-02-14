@@ -1,16 +1,33 @@
 import React from 'react';
+import pattern from '../images/pattern-divider-mobile.svg';
+import dice from '../images/icon-dice.svg';
 
-export default function Main() {
+export default function Main(props) {
+	// React.useEffect(() => {
+	// 	fetch('https://api.adviceslip.com')
+	// 		.then((res) => res.join())
+	// 		.then((data) => setApiData(data));
+	// });
+
+	// React.useEffect(() => {
+	// 	async function getAdvice() {
+	// 		const res = await fetch('https://api.adviceslip.com');
+	// 		const data = await res.join();
+	// 		setApiData(data);
+	// 	}
+	// 	getAdvice();
+	// });
+
 	return (
 		<div className='main'>
-			<p className='adviceNo'>Advice #117</p>
-			<p className='advice'>
-				"Its easy to sit up and take notice, what's difficult is getting back up
-				and taking action"
-			</p>
-			<section className='wrapper'>
-				<div className='pause'></div>
-			</section>
+			<p className='adviceNo'>{`Advice # ${props.num}`}</p>
+			<p className='advice'>{props.advice}</p>
+
+			<img src={pattern} className='divider' />
+
+			<button className='btn'>
+				<img src={dice} className='dice-img' />
+			</button>
 		</div>
 	);
 }

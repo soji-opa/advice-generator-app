@@ -55,7 +55,11 @@ code {
 	padding: 1.5rem;
 	background-color: var(--clr-dkgblue);
 	border-radius: 10px;
-	max-width: 400px;
+	max-width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .adviceNo {
@@ -68,29 +72,24 @@ code {
 .advice {
 	color: whitesmoke;
 	font-weight: 800;
+	margin-bottom: 20px;
 }
 
-.pause {
-	border-left: 5px solid white;
-	border-right: 5px solid white;
-	width: 15px;
-	height: 16px;
-	margin-inline: auto;
+.btn {
+	background-color: var(--clr-neongreen);
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 60%;
+	position: relative;
 	margin-top: 20px;
-	padding-left: 6px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 
-.pause:before,
-.pause:after {
-	content: '';
-	display: inline-block;
-	width: 50%;
-	height: 2px;
-	margin: 0 0.5em 0 -55%;
-	vertical-align: middle;
-	border-bottom: 1px solid;
+.dice-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
