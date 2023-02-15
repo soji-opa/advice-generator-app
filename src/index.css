@@ -67,6 +67,7 @@ code {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	font-weight: 800;
+	letter-spacing: 2px;
 }
 
 .advice {
@@ -83,6 +84,13 @@ code {
 	border-radius: 60%;
 	position: relative;
 	margin-top: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+	cursor: pointer;
+	color: var(--clr-neongreen);
+	box-shadow: 0px 0px 30px 8px var(--clr-neongreen);
 }
 
 .dice-img {
