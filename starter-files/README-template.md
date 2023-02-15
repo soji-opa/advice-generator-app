@@ -34,7 +34,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -69,16 +69,36 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+	color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
 }
+
+box-shadow: h-offset v-offset blur spread color;
+
+h-offset: Horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box - Required
+
+v-offset: Vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box - Required
+
+blur: Blur radius (The higher the number, the more blurred the shadow will be) - Optional
+
+color: Color of the shadow - Optional
+
+spread: Spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow - Optional
+
+inset: Changes the shadow from an outer shadow to an inner shadow - Optional
+
+
 ```
+
+[source of the above explanation about box shadows ](https://stackoverflow.com/questions/5608222/how-to-apply-box-shadow-on-all-four-sides)
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
