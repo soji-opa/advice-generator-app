@@ -60,6 +60,7 @@ code {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	position: relative;
 }
 
 .adviceNo {
@@ -76,6 +77,10 @@ code {
 	margin-bottom: 20px;
 }
 
+.divider {
+	margin-bottom: 30px;
+}
+
 .btn {
 	background-color: var(--clr-neongreen);
 	border: none;
@@ -85,6 +90,10 @@ code {
 	position: relative;
 	margin-top: 20px;
 	transition: all 0.5s ease-in-out;
+	position: absolute;
+	top: 89%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .btn:hover {
@@ -100,4 +109,18 @@ code {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+@media (min-width: 565px) {
+	.main {
+		max-width: 375px;
+	}
+
+	.advice {
+		margin-bottom: 30px;
+	}
+
+	.divider {
+		width: 88%;
+	}
 }
